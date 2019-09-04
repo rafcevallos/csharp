@@ -71,6 +71,38 @@ namespace bangazon
             for (int i=0; i<products.Count; i++) {
                 Console.WriteLine(products[i]);
             }
+
+            List<int> yearsBorn = new List<int>() {
+                1967, 1969, 1972
+            };
+
+            yearsBorn.ForEach(i => Console.Write("{0}\t", i));
+        }
+    }
+}
+
+namespace NSSOrientation
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            List<string> students = new List<string>() {
+                "Megan", "Damon", "Chase", "Tekisha",
+                "Castle", "Mark", "Keith", "Adam",
+                "Patrick", "Hannah", "Mike"
+            };
+
+            // Can't do this easily with a base array
+            students.Add("Melanie");
+            students.Insert(3, "Simon");
+
+            if (students.Contains("Chase")) {
+                Console.WriteLine("Must be cohort 13");
+            }
+
+            // This looks a lot like JavaScript!
+            students.ForEach(stu => Console.WriteLine(stu));
         }
     }
 }
