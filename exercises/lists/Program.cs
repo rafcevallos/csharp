@@ -36,9 +36,14 @@ namespace lists
             Console.WriteLine(string.Join(", ", planetList));
             Console.WriteLine(string.Join(", ", lastPlanets));
             Console.WriteLine(string.Join(", ", rockyPlanets));
-            // foreach (var planet in planetList) {
-            //     Console.WriteLine (planet);
-            // }
+        }
+    }
+
+    class RandomNumbers
+    {
+        static void Main2(string[] args)
+        {
+            Console.WriteLine("Hello");
         }
     }
 }

@@ -1,6 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <StartupObject>numberLists.randomNumbers</StartupObject>
+    <!-- <StartupObject>lists.Program</StartupObject> -->
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
